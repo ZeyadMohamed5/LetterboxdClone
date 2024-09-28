@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LetterBoxdClone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://db.onlinewebfonts.com/c/02fb003368979ba04752e4f3b4c4cebd?family=Graphik+Web+Semibold+Regular"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/e50594fdf8d9d9390f930016e6db2223?family=Graphik+Web+Light+Regular"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/105007d99d9df64c50cc24d696d79555?family=Graphik+Web+Regular+Regular"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/37b29158c68de167677fa4a3087d7188?family=TiemposText-Regular"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/22b044be38a057a10bf4b457c31a1729?family=TiemposText-Semibold"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navigation fs-small ff-semi-bold">
+          <div class="sprite logo">
+            <a href=""></a>
+          </div>
+          <ul class="navigation-items hide-on-mobile uppercase">
+            <li>
+              <a class="fc-primary" href="">
+                <img class="userimg" src="assets/user.jpg" alt="" />
+                Venomous666
+                <span class="sprite toggle"></span>
+              </a>
+
+              <ul class="sub-list ff-regular fs-smaller">
+                <li class="ff-semi-bold fs-small">
+                  <img class="userimg" src="assets/user.jpg" alt="" />
+                  Venomous666
+                  <span class="sprite toggle"></span>
+                </li>
+                <li class="divider">Home</li>
+                <li>Profile</li>
+                <li>Films</li>
+                <li>Diary</li>
+                <li>Reviews</li>
+                <li>Watchlist</li>
+                <li>Lists</li>
+                <li>Likes</li>
+                <li>Tags</li>
+                <li>Network</li>
+                <li class="divider">Settings</li>
+                <li>Subscriptions</li>
+                <li>Sign out</li>
+              </ul>
+            </li>
+            <li>
+              <a class="sprite thunder" href=""></a>
+            </li>
+            <li><a class="fc-primary" href="">Films</a></li>
+            <li><a class="fc-primary" href="">Lists</a></li>
+            <li><a class="fc-primary" href="">Members</a></li>
+            <li><a class="fc-primary" href="">Journal</a></li>
+            <li>
+              <a class="sprite mag"> </a>
+            </li>
+            <li class="logbutton">
+              <div>
+                <button class="btn ff-semi-bold uppercase">
+                  <a class="">log </a>
+                </button>
+                <span class="log-toggle"></span>
+              </div>
+            </li>
+            <li class="search-box-container">
+              <div class="search-box">
+                <input class="search search-borders ff-regular" type="text" />
+                <span class="sprite search-icon"></span>
+              </div>
+            </li>
+          </ul>
+
+          <!--                       MOBILE VIEW                          -->
+
+          <ul class="header-mobile-view hide navigation-items">
+            <li class="sprite">
+              <a href=""></a>
+            </li>
+            <li class="sprite hamburger-menu">
+              <a href=""></a>
+              <nav class="mobile-nav">
+                <ul class="nav-mobile-list">
+                  <li>
+                    <a class="fc-primary" href="">
+                      <img class="userimg" src="assets/user.jpg" alt="" />
+                      Venomous666</a
+                    >
+                    <ul class="sub-mobile-list fs-smaller ff-regular divider">
+                      <li>Home</li>
+                      <li>films</li>
+                      <li>Reviews</li>
+                      <li>lists</li>
+                      <li>tags</li>
+                      <li>profile</li>
+                      <li>Diary</li>
+                      <li>Watchlist</li>
+                      <li>likes</li>
+                      <li>Network</li>
+                    </ul>
+                    <ul
+                      class="sub-mobile-list-settings fs-smaller ff-regular divider"
+                    >
+                      <li>Settings</li>
+                      <li>Sign out</li>
+                      <li>Subscriptions</li>
+                    </ul>
+                  </li>
+                  <li class="divider">
+                    <span class="sprite nav-icon activity"></span>
+                    <a class="fc-primary" href="">Activity</a>
+                  </li>
+                  <li class="divider">
+                    <span class="sprite nav-icon films"></span>
+                    <a class="fc-primary" href="">Films</a>
+                  </li>
+                  <li class="divider">
+                    <span class="sprite nav-icon lists"></span>
+                    <a class="fc-primary" href="">Lists</a>
+                  </li>
+                  <li class="divider">
+                    <span class="sprite nav-icon members"></span>
+                    <a class="fc-primary" href="">Members</a>
+                  </li>
+                  <li class="divider">
+                    <span class="sprite nav-icon journal"></span>
+                    <a class="fc-primary" href="">Journal</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="sprite search-button">
+              <a class=""></a>
+              <div class="mobile-search-box">
+                <input
+                  class="input-mobile-search-box search-borders"
+                  type="text"
+                />
+                <span class="sprite search-icon"></span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Header Ends -->
+    <main>
+      <div class="container">
+        <div class="hide-on-mobile">
+          <img class="ads pt-4" src="assets/Ad.png" alt="" />
+        </div>
+        <h1 class="welcome pt-4 fc-primary fs-large ff-light">
+          Welcome back,
+          <span class="user-name"
+            ><a href="https://letterboxd.com/venomous666/">venomous666</a></span
+          >.<span class="hide-on-mobile fc-primary">
+            Here's what your friends have been watching…
+          </span>
+        </h1>
+        <section class="sec-1">
+          <div class="section-heading ff-light">
+            <a class="fs-smaller fw-bold fc-primary" href=""
+              >New From Friends</a
+            >
+
+            <a class="more-btn" href=""
+              >All activity <span class="sprite thunder-icon"> </span>
+            </a>
+          </div>
+
+          <ul class="movie-cards-container">
+            <li class="movie-cards">
+              <img class="movie-poster" src="assets/movie-poster1.jpg" alt="" />
+              <span class="user-name-on-card ff-semi-bold fs-small">
+                <img class="avatar" src="assets/user.jpg" /> Zeyad
+              </span>
+              <div class="review">
+                <span class="sprite rating"></span>
+                <span class="fs-smaller fc-primary ff-light date hide-on-mobile"
+                  >Sep 19</span
+                >
+              </div>
+              <div class="movie-status">
+                <span class="sprite eye"></span>
+                <span class="sprite heart"></span>
+                <span class="sprite dots"> </span>
+                <ul class="sub-list movie-list ff-regular fs-smaller">
+                  <li class="sprite rating-stars"></li>
+                  <li>Show your activity</li>
+                  <li>Log or review film</li>
+                  <li>add to Watchlist</li>
+                  <li>add to lists</li>
+                  <li>show in lists</li>
+                  <li>where to watch</li>
+                </ul>
+              </div>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                A Clockwork Orange (1972)
+              </div>
+            </li>
+            <li class="movie-cards">
+              <img class="movie-poster" src="assets/movie-poster2.jpg" alt="" />
+              <span class="user-name-on-card ff-semi-bold fs-small">
+                <img class="avatar" src="assets/user.jpg" /> Zeyad
+              </span>
+              <div class="review">
+                <span class="sprite rating"></span>
+                <span class="fs-smaller fc-primary ff-light date hide-on-mobile"
+                  >Sep 19</span
+                >
+              </div>
+              <div class="movie-status">
+                <span class="sprite eye"></span>
+                <span class="sprite heart"></span>
+                <span class="sprite dots"></span>
+                <ul class="sub-list movie-list ff-regular fs-smaller">
+                  <li class="sprite rating-stars"></li>
+                  <li>Show your activity</li>
+                  <li>Log or review film</li>
+                  <li>add to Watchlist</li>
+                  <li>add to lists</li>
+                  <li>show in lists</li>
+                  <li>where to watch</li>
+                </ul>
+              </div>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                Pulp fiction (1994)
+              </div>
+            </li>
+            <li class="movie-cards">
+              <img class="movie-poster" src="assets/movie-poster3.jpg" alt="" />
+              <span class="user-name-on-card ff-semi-bold fs-small">
+                <img class="avatar" src="assets/user.jpg" /> Zeyad
+              </span>
+              <div class="review">
+                <span class="sprite rating"></span>
+                <span class="fs-smaller fc-primary ff-light date hide-on-mobile"
+                  >Sep 19</span
+                >
+              </div>
+              <div class="movie-status">
+                <span class="sprite eye"></span>
+                <span class="sprite heart"></span>
+                <span class="sprite dots"></span>
+                <ul class="sub-list movie-list ff-regular fs-smaller">
+                  <li class="sprite rating-stars"></li>
+                  <li>Show your activity</li>
+                  <li>Log or review film</li>
+                  <li>add to Watchlist</li>
+                  <li>add to lists</li>
+                  <li>show in lists</li>
+                  <li>where to watch</li>
+                </ul>
+              </div>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                fightclub (1999)
+              </div>
+            </li>
+            <li class="movie-cards">
+              <img class="movie-poster" src="assets/movie-poster4.jpg" alt="" />
+              <span class="user-name-on-card ff-semi-bold fs-small">
+                <img class="avatar" src="assets/user.jpg" /> Zeyad
+              </span>
+              <div class="review">
+                <span class="sprite rating"></span>
+                <span class="fs-smaller fc-primary ff-light date hide-on-mobile"
+                  >Sep 19</span
+                >
+              </div>
+              <div class="movie-status">
+                <span class="sprite eye"></span>
+                <span class="sprite heart"></span>
+                <span class="sprite dots"></span>
+                <ul class="sub-list movie-list ff-regular fs-smaller">
+                  <li class="sprite rating-stars"></li>
+                  <li>Show your activity</li>
+                  <li>Log or review film</li>
+                  <li>add to Watchlist</li>
+                  <li>add to lists</li>
+                  <li>show in lists</li>
+                  <li>where to watch</li>
+                </ul>
+              </div>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                The Fly (1986)
+              </div>
+            </li>
+            <li class="movie-cards">
+              <img class="movie-poster" src="assets/movie-poster5.jpg" alt="" />
+              <span class="user-name-on-card ff-semi-bold fs-small">
+                <img class="avatar" src="assets/user.jpg" /> Zeyad
+              </span>
+              <div class="review">
+                <span class="sprite rating"></span>
+                <span class="fs-smaller fc-primary ff-light date hide-on-mobile"
+                  >Sep 19</span
+                >
+              </div>
+              <div class="movie-status">
+                <span class="sprite eye"></span>
+                <span class="sprite heart"></span>
+                <span class="sprite dots"> </span>
+                <ul class="sub-list movie-list ff-regular fs-smaller">
+                  <li class="sprite rating-stars"></li>
+                  <li>Show your activity</li>
+                  <li>Log or review film</li>
+                  <li>add to Watchlist</li>
+                  <li>add to lists</li>
+                  <li>show in lists</li>
+                  <li>where to watch</li>
+                </ul>
+              </div>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                The Thin Red Line (1998)
+              </div>
+            </li>
+            <li class="movie-cards">
+              <img class="movie-poster" src="assets/movie-poster6.jpg" alt="" />
+              <span class="user-name-on-card ff-semi-bold fs-small">
+                <img class="avatar" src="assets/user.jpg" /> Zeyad
+              </span>
+              <div class="review">
+                <span class="sprite rating"></span>
+                <span class="fs-smaller fc-primary ff-light date hide-on-mobile"
+                  >Sep 19</span
+                >
+              </div>
+              <div class="movie-status">
+                <span class="sprite eye"></span>
+                <span class="sprite heart"></span>
+                <span class="sprite dots"></span>
+                <ul class="sub-list movie-list ff-regular fs-smaller">
+                  <li class="sprite rating-stars"></li>
+                  <li>Show your activity</li>
+                  <li>Log or review film</li>
+                  <li>add to Watchlist</li>
+                  <li>add to lists</li>
+                  <li>show in lists</li>
+                  <li>where to watch</li>
+                </ul>
+              </div>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                Raging Bull(1980)
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- New from friends section ends -->
+        <div class="hide-on-mobile">
+          <img class="ads pt-6" src="assets/Ad-bigger.jpg" alt="" />
+        </div>
+
+        <section class="sec-2 pt-5 hide-on-mobile">
+          <div class="section-heading ff-light">
+            <a class="fs-smaller fw-bold fc-primary" href=""
+              >Popular with Friends</a
+            >
+            <a class="more-btn" href="">more </a>
+          </div>
+          <ul class="movie-cards-container">
+            <li class="movie-cards">
+              <img class="movie-poster" src="assets/movie-poster7.jpg" alt="" />
+              <div class="movie-status">
+                <span class="sprite eye"></span>
+                <span class="sprite heart"></span>
+                <span class="sprite dots"> </span>
+                <ul class="sub-list movie-list ff-regular fs-smaller">
+                  <li class="sprite rating-stars"></li>
+                  <li>Show your activity</li>
+                  <li>Log or review film</li>
+                  <li>add to Watchlist</li>
+                  <li>add to lists</li>
+                  <li>show in lists</li>
+                  <li>where to watch</li>
+                </ul>
+              </div>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                Kinds of kindness (2024)
+              </div>
+            </li>
+            <li class="movie-cards">
+              <img
+                class="movie-poster"
+                src="assets/movie-poster12.jpg"
+                alt=""
+              />
+              <div class="movie-status">
+                <span class="sprite eye"></span>
+                <span class="sprite heart"></span>
+                <span class="sprite dots"> </span>
+                <ul class="sub-list movie-list ff-regular fs-smaller">
+                  <li class="sprite rating-stars"></li>
+                  <li>Show your activity</li>
+                  <li>Log or review film</li>
+                  <li>add to Watchlist</li>
+                  <li>add to lists</li>
+                  <li>show in lists</li>
+                  <li>where to watch</li>
+                </ul>
+              </div>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                leon the professional (1994)
+              </div>
+            </li>
+            <li class="movie-cards">
+              <img class="movie-poster" src="assets/movie-poster8.jpg" alt="" />
+              <div class="movie-status">
+                <span class="sprite eye"></span>
+                <span class="sprite heart"></span>
+                <span class="sprite dots"> </span>
+                <ul class="sub-list movie-list ff-regular fs-smaller">
+                  <li class="sprite rating-stars"></li>
+                  <li>Show your activity</li>
+                  <li>Log or review film</li>
+                  <li>add to Watchlist</li>
+                  <li>add to lists</li>
+                  <li>show in lists</li>
+                  <li>where to watch</li>
+                </ul>
+              </div>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                Paris, Texas (1984)
+              </div>
+            </li>
+            <li class="movie-cards">
+              <img class="movie-poster" src="assets/movie-poster9.jpg" alt="" />
+              <div class="movie-status">
+                <span class="sprite eye"></span>
+                <span class="sprite heart"></span>
+                <span class="sprite dots"> </span>
+                <ul class="sub-list movie-list ff-regular fs-smaller">
+                  <li class="sprite rating-stars"></li>
+                  <li>Show your activity</li>
+                  <li>Log or review film</li>
+                  <li>add to Watchlist</li>
+                  <li>add to lists</li>
+                  <li>show in lists</li>
+                  <li>where to watch</li>
+                </ul>
+              </div>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                La la land (2016)
+              </div>
+            </li>
+            <li class="movie-cards">
+              <img
+                class="movie-poster"
+                src="assets/movie-poster10.jpg"
+                alt=""
+              />
+              <div class="movie-status">
+                <span class="sprite eye"></span>
+                <span class="sprite heart"></span>
+                <span class="sprite dots"> </span>
+                <ul class="sub-list movie-list ff-regular fs-smaller">
+                  <li class="sprite rating-stars"></li>
+                  <li>Show your activity</li>
+                  <li>Log or review film</li>
+                  <li>add to Watchlist</li>
+                  <li>add to lists</li>
+                  <li>show in lists</li>
+                  <li>where to watch</li>
+                </ul>
+              </div>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                Birdman (2014)
+              </div>
+            </li>
+            <li class="movie-cards">
+              <img
+                class="movie-poster"
+                src="assets/movie-poster11.jpg"
+                alt=""
+              />
+              <div class="movie-status">
+                <span class="sprite eye"></span>
+                <span class="sprite heart"></span>
+                <span class="sprite dots"> </span>
+                <ul class="sub-list movie-list ff-regular fs-smaller">
+                  <li class="sprite rating-stars"></li>
+                  <li>Show your activity</li>
+                  <li>Log or review film</li>
+                  <li>add to Watchlist</li>
+                  <li>add to lists</li>
+                  <li>show in lists</li>
+                  <li>where to watch</li>
+                </ul>
+              </div>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                The grandbudapest (2014)
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="latsest-news pt-3">
+          <div class="section-heading ff-light">
+            <a class="fs-smaller fw-bold fc-primary" href="">latest news</a>
+            <a class="more-btn" href="">more </a>
+          </div>
+          <div class="news">
+            <img class="new-img" src="assets/news.jpg" alt="" />
+            <div class="article">
+              <h1 class="ff-semi-bold">20 of 20</h1>
+              <p class="fc-primary ff-timepos-regular">
+                As The Black List rings in its twenty-year anniversary, founder
+                Franklin Leonard and Senior VP Kate Hagen share their 20 for 20
+                initiative, which includes 60 Letterboxd lists celebrating
+                everything from worm cinema to movie malls.
+                <a class="fc-btns ff-semi-bold fs-small">Read more</a>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Reviews section -->
+        <section class="sec-3 pt-6">
+          <div class="section-heading ff-light">
+            <a class="fs-smaller fw-bold fc-primary" href=""
+              >Popular reviews with Friends</a
+            >
+            <a class="more-btn" href="">more </a>
+          </div>
+          <div class="reviews-wrap">
+            <div class="column">
+              <div class="reviews">
+                <div class="review-header">
+                  <div class="movie-cards">
+                    <img
+                      class="movie-poster"
+                      src="assets/movie-poster11.jpg"
+                      alt=""
+                    />
+                    <div class="movie-status">
+                      <span class="sprite eye"></span>
+                      <span class="sprite heart"></span>
+                      <span class="sprite dots"> </span>
+                      <ul class="sub-list movie-list ff-regular fs-smaller">
+                        <li class="sprite rating-stars"></li>
+                        <li>Show your activity</li>
+                        <li>Log or review film</li>
+                        <li>add to Watchlist</li>
+                        <li>add to lists</li>
+                        <li>show in lists</li>
+                        <li>where to watch</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="review-header-info">
+                    <div class="user-name-review-info">
+                      <img class="avatar" src="assets/user.jpg" alt="" />
+                      <span class="fc-title ff-semi-bold">Noah</span>
+                    </div>
+                    <div class="movie-title">
+                      <a class="ff-timepos-semibold">
+                        The grandbudapest hotel</a
+                      >
+                      <span class="ff-light"> 2014 </span>
+                    </div>
+                    <div class="ratings">
+                      <span class="sprite review-rating"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-body">
+                  <p class="fc-primary ff-timepos-regular">
+                    a movie about a girl, who reads a book about a man, who
+                    hears a story about a lobby boy, who meets a man who runs a
+                    hotel, a hotel for which the story, the book, and the movie
+                    are named for
+                  </p>
+
+                  <div class="interaction">
+                    <a class="like-btn ff-semi-bold fs-small">
+                      <span class="like-btn-icon"></span>
+                      Like review</a
+                    >
+                    <span class="likes-counter ff-regular fs-small"
+                      >81 likes</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="reviews">
+                <div class="review-header">
+                  <div class="movie-cards">
+                    <img
+                      class="movie-poster"
+                      src="assets/movie-poster12.jpg"
+                      alt=""
+                    />
+                    <div class="movie-status">
+                      <span class="sprite eye"></span>
+                      <span class="sprite heart"></span>
+                      <span class="sprite dots"> </span>
+                      <ul class="sub-list movie-list ff-regular fs-smaller">
+                        <li class="sprite rating-stars"></li>
+                        <li>Show your activity</li>
+                        <li>Log or review film</li>
+                        <li>add to Watchlist</li>
+                        <li>add to lists</li>
+                        <li>show in lists</li>
+                        <li>where to watch</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="review-header-info">
+                    <div class="user-name-review-info">
+                      <img class="avatar" src="assets/user.jpg" alt="" />
+                      <span class="fc-title ff-semi-bold">Bethany</span>
+                    </div>
+                    <div class="movie-title">
+                      <a class="ff-timepos-semibold"> Léon: The Professional</a>
+                      <span class="ff-light"> 1994 </span>
+                    </div>
+                    <div class="ratings">
+                      <span class="sprite review-rating"></span>
+                      <span class="sprite heart-reaction"></span>
+                      <span class="sprite comments"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-body">
+                  <p class="fc-primary ff-timepos-regular">
+                    THIS is exactly why i want to make movies. when i make a
+                    movie someday and if i make at least one person feel the way
+                    this movie made me feel, i will be content. i was not
+                    expecting to love this one as much as i did but holy shit.
+                    léon: the professional has the perfect amount of heart and
+                    emotion to go along with how badass and hardcore it is. both
+                    characters helped each other discover things about
+                    themselves along the way and it's stunning to watch.
+                  </p>
+                  <div class="interaction">
+                    <a class="like-btn ff-semi-bold fs-small">
+                      <span class="like-btn-icon"></span>
+                      Like review</a
+                    >
+                    <span class="likes-counter ff-regular fs-small"
+                      >373 likes</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="reviews">
+                <div class="review-header">
+                  <div class="movie-cards">
+                    <img
+                      class="movie-poster"
+                      src="assets/movie-poster9.jpg"
+                      alt=""
+                    />
+                    <div class="movie-status">
+                      <span class="sprite eye"></span>
+                      <span class="sprite heart"></span>
+                      <span class="sprite dots"> </span>
+                      <ul class="sub-list movie-list ff-regular fs-smaller">
+                        <li class="sprite rating-stars"></li>
+                        <li>Show your activity</li>
+                        <li>Log or review film</li>
+                        <li>add to Watchlist</li>
+                        <li>add to lists</li>
+                        <li>show in lists</li>
+                        <li>where to watch</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="review-header-info">
+                    <div class="user-name-review-info">
+                      <img class="avatar" src="assets/user.jpg" alt="" />
+                      <span class="fc-title ff-semi-bold">joy</span>
+                    </div>
+                    <div class="movie-title">
+                      <a class="ff-timepos-semibold"> La La Land</a>
+                      <span class="ff-light"> 2016 </span>
+                    </div>
+                    <div class="ratings">
+                      <span class="sprite review-rating"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-body">
+                  <p class="fc-primary ff-timepos-regular">
+                    Sometimes life is like this, you get very close to the thing
+                    you thought you wanted, but you end up getting another
+                    different thing. It doesn’t mean you stopped loving the
+                    first thing, you just grow in different ways and into
+                    different places
+                  </p>
+
+                  <div class="interaction">
+                    <a class="like-btn ff-semi-bold fs-small">
+                      <span class="like-btn-icon"></span>
+                      Like review</a
+                    >
+                    <span class="likes-counter ff-regular fs-small"
+                      >190 likes</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="reviews">
+                <div class="review-header">
+                  <div class="movie-cards">
+                    <img
+                      class="movie-poster"
+                      src="assets/movie-poster8.jpg"
+                      alt=""
+                    />
+                    <div class="movie-status">
+                      <span class="sprite eye"></span>
+                      <span class="sprite heart"></span>
+                      <span class="sprite dots"> </span>
+                      <ul class="sub-list movie-list ff-regular fs-smaller">
+                        <li class="sprite rating-stars"></li>
+                        <li>Show your activity</li>
+                        <li>Log or review film</li>
+                        <li>add to Watchlist</li>
+                        <li>add to lists</li>
+                        <li>show in lists</li>
+                        <li>where to watch</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="review-header-info">
+                    <div class="user-name-review-info">
+                      <img class="avatar" src="assets/user.jpg" alt="" />
+                      <span class="fc-title ff-semi-bold">john</span>
+                    </div>
+                    <div class="movie-title">
+                      <a class="ff-timepos-semibold"> Paris, Texas</a>
+                      <span class="ff-light"> 1984 </span>
+                    </div>
+                    <div class="ratings">
+                      <span class="sprite review-rating"></span>
+                      <span class="sprite heart-reaction"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-body">
+                  <p class="fc-primary ff-timepos-regular">
+                    the sentiment! the earnestness on display! it all feels so
+                    universal despite being so specific... and instantly became
+                    my all time favorite performance by a child actor. life
+                    changing stuff just as i knew it would be
+                  </p>
+
+                  <div class="interaction">
+                    <a class="like-btn ff-semi-bold fs-small">
+                      <span class="like-btn-icon"></span>
+                      Like review</a
+                    >
+                    <span class="likes-counter ff-regular fs-small"
+                      >11 likes</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Lists section -->
+        <section class="sec-4 pt-6">
+          <div class="section-heading ff-light">
+            <a class="fs-smaller fw-bold fc-primary" href=""
+              >New from Friends</a
+            >
+            <a class="more-btn" href="">more </a>
+          </div>
+
+          <div class="lists-container">
+            <div class="lists-card">
+              <div class="posters-container">
+                <img src="assets/list-poster5.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster4.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster3.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster2.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster1.jpg" alt="" class="list-poster" />
+              </div>
+              <div class="list-title">
+                <h3 class="ff-semi-bold fs-regular">
+                  <a href=""> Official Top 250 Narrative Feature Films </a>
+                </h3>
+              </div>
+              <div class="list-info">
+                <img src="assets/user.jpg" alt="" class="avatar" />
+                <a class="ff-semi-bold fs-small">Zeyad</a>
+                <span class="sprite like-list-btn"> </span>
+                <span class="like-counter-list fs-smaller ff-regular">19</span>
+              </div>
+            </div>
+            <div class="lists-card">
+              <div class="posters-container">
+                <img src="assets/list-poster5.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster4.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster3.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster2.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster1.jpg" alt="" class="list-poster" />
+              </div>
+              <div class="list-title">
+                <h3 class="ff-semi-bold fs-regular">
+                  <a href=""> Official Top 250 Narrative Feature Films </a>
+                </h3>
+              </div>
+              <div class="list-info">
+                <img src="assets/user.jpg" alt="" class="avatar" />
+                <a class="ff-semi-bold fs-small">Zeyad</a>
+                <span class="sprite like-list-btn"> </span>
+                <span class="like-counter-list fs-smaller ff-regular">19</span>
+              </div>
+            </div>
+            <div class="lists-card">
+              <div class="posters-container">
+                <img src="assets/list-poster6.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster7.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster8.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster9.jpg" alt="" class="list-poster" />
+                <img
+                  src="assets/list-poster10.jpg"
+                  alt=""
+                  class="list-poster"
+                />
+              </div>
+              <div class="list-title">
+                <h3 class="ff-semi-bold fs-regular">
+                  <a href=""> What is Reality? </a>
+                </h3>
+              </div>
+              <div class="list-info">
+                <img src="assets/user.jpg" alt="" class="avatar" />
+                <a class="ff-semi-bold fs-small">Zeyad</a>
+                <span class="sprite like-list-btn"> </span>
+                <span class="like-counter-list fs-smaller ff-regular">19</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Lists section -->
+        <section class="sec-4 pt-4">
+          <div class="section-heading ff-light">
+            <a class="fs-smaller fw-bold fc-primary" href=""
+              >Popular from Friends</a
+            >
+            <a class="more-btn" href="">more </a>
+          </div>
+
+          <div class="lists-container">
+            <div class="lists-card">
+              <div class="posters-container">
+                <img src="assets/list-poster5.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster4.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster3.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster2.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster1.jpg" alt="" class="list-poster" />
+              </div>
+              <div class="list-title">
+                <h3 class="ff-semi-bold fs-regular">
+                  <a href=""> Official Top 250 Narrative Feature Films </a>
+                </h3>
+              </div>
+              <div class="list-info">
+                <img src="assets/user.jpg" alt="" class="avatar" />
+                <a class="ff-semi-bold fs-small">Zeyad</a>
+                <span class="sprite like-list-btn"> </span>
+                <span class="like-counter-list fs-smaller ff-regular">19</span>
+              </div>
+            </div>
+            <div class="lists-card">
+              <div class="posters-container">
+                <img src="assets/list-poster6.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster7.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster8.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster9.jpg" alt="" class="list-poster" />
+                <img
+                  src="assets/list-poster10.jpg"
+                  alt=""
+                  class="list-poster"
+                />
+              </div>
+              <div class="list-title">
+                <h3 class="ff-semi-bold fs-regular">
+                  <a href=""> What is Reality? </a>
+                </h3>
+              </div>
+              <div class="list-info">
+                <img src="assets/user.jpg" alt="" class="avatar" />
+                <a class="ff-semi-bold fs-small">Zeyad</a>
+                <span class="sprite like-list-btn"> </span>
+                <span class="like-counter-list fs-smaller ff-regular">19</span>
+              </div>
+            </div>
+            <div class="lists-card">
+              <div class="posters-container">
+                <img src="assets/list-poster5.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster4.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster3.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster2.jpg" alt="" class="list-poster" />
+                <img src="assets/list-poster1.jpg" alt="" class="list-poster" />
+              </div>
+              <div class="list-title">
+                <h3 class="ff-semi-bold fs-regular">
+                  <a href=""> Official Top 250 Narrative Feature Films </a>
+                </h3>
+              </div>
+              <div class="list-info">
+                <img src="assets/user.jpg" alt="" class="avatar" />
+                <a class="ff-semi-bold fs-small">Zeyad</a>
+                <span class="sprite like-list-btn"> </span>
+                <span class="like-counter-list fs-smaller ff-regular">19</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recent stories section -->
+        <section class="sec-5 pt-6">
+          <div class="section-heading ff-light">
+            <a class="fs-smaller fw-bold fc-primary" href="">Recent Stories</a>
+            <a class="more-btn" href="">All hqs </a>
+          </div>
+          <div class="recent-stories-wrapper">
+            <div class="column pt-1">
+              <div class="story-container">
+                <img src="assets/story-img1.jpg" alt="" class="story-cover" />
+                <div class="story-body">
+                  <div class="list-info">
+                    <img src="assets/user.jpg" alt="" class="avatar" />
+                    <a class="ff-semi-bold fs-small">Film Colossus</a>
+                  </div>
+                  <h1 class="story-title">
+                    <a class="fs-medium ff-timepos-semibold" href="">
+                      The Best Explanation of Blink Twice
+                    </a>
+                  </h1>
+                  <p class="fc-primary fs-small ff-regular">
+                    If you want to get better at watching movies, then you've
+                    come to the right place. Not only will you come away with a
+                    better understanding of Blink Twice's themes and meaning,
+                    but you'll learn some new techniques that will make watching
+                    movies much more active and exciting.
+                  </p>
+                  <a class="ff-semi-bold fc-btns fs-small uppercase"
+                    >Read Story</a
+                  >
+                </div>
+              </div>
+              <div class="story-container">
+                <img src="assets/story-img2.jpg" alt="" class="story-cover" />
+                <div class="story-body">
+                  <div class="list-info">
+                    <img src="assets/user.jpg" alt="" class="avatar" />
+                    <a class="ff-semi-bold fs-small"> High On Films</a>
+                  </div>
+                  <h1 class="story-title">
+                    <a
+                      class="story-title fs-medium ff-timepos-semibold"
+                      href=""
+                    >
+                      All Spider-Man Movies Ranked from Worst to Best
+                    </a>
+                  </h1>
+                  <p class="fc-primary fs-small ff-regular">
+                    Although the title of this article is self-explanatory,
+                    here’s a clarification: this is a ranking of all the
+                    feature-length Spider-Man movies. A Wikipedia article on
+                    Spider-Man movies shows that there are films on the
+                    wall-crawler in addition to the ones mentioned in this list.
+                    But that’s not exactly true since they are either pilots to
+                    series or a composite of a couple of episodes that were
+                    released as a “film.” So, that doesn’t count. The ones that
+                    we are considering…
+                  </p>
+                  <a class="ff-semi-bold fc-btns fs-small uppercase"
+                    >Read Story</a
+                  >
+                </div>
+              </div>
+              <div class="story-container">
+                <img src="assets/story-img3.jpg" alt="" class="story-cover" />
+                <div class="story-body">
+                  <div class="list-info">
+                    <img src="assets/user.jpg" alt="" class="avatar" />
+                    <a class="ff-semi-bold fs-small">Regent Street Cinema</a>
+                  </div>
+                  <h1 class="story-title">
+                    <a
+                      class="story-title fs-medium ff-timepos-semibold"
+                      href=""
+                    >
+                      What’s on this week: 27 September
+                    </a>
+                  </h1>
+                  <p class="fc-primary fs-small ff-regular">
+                    We've got a bumper crop of movies showing this week, even by
+                    our standards!
+                  </p>
+                  <a class="ff-semi-bold fc-btns fs-small uppercase"
+                    >Read Story</a
+                  >
+                </div>
+              </div>
+              <div class="story-container">
+                <img src="assets/story-img4.jpg" alt="" class="story-cover" />
+                <div class="story-body">
+                  <div class="list-info">
+                    <img src="assets/user.jpg" alt="" class="avatar" />
+                    <a class="ff-semi-bold fs-small"
+                      >La Cinémathèque française</a
+                    >
+                  </div>
+                  <h1 class="story-title">
+                    <a
+                      class="story-title fs-medium ff-timepos-semibold"
+                      href=""
+                    >
+                      Wes Anderson, the Exhibition - Paris and London, 2025-26
+                    </a>
+                  </h1>
+                  <p class="fc-primary fs-small ff-regular">
+                    “I first visited the Cinématèque 25 years ago when it was
+                    still on the Trocadero, but I know it in my imagination
+                    (from the letters of François Truffaut) all the way back to
+                    when it was on the Ave. de Messine and rue d'Ulm -- and
+                    somehow I indirectly trace my own movie education to Henri
+                    Langlois and his acolytes -- so it an extra-special thrill
+                    for me to participate in this exhibition of whatever-it-is
+                    we are going to eventually…
+                  </p>
+                  <a class="ff-semi-bold fc-btns fs-small uppercase"
+                    >Read Story</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="column pt-1">
+              <div class="story-container">
+                <img src="assets/story-img5.jpg" alt="" class="story-cover" />
+                <div class="story-body">
+                  <div class="list-info">
+                    <img src="assets/user.jpg" alt="" class="avatar" />
+                    <a class="ff-semi-bold fs-small">De Cinema</a>
+                  </div>
+                  <h1 class="story-title">
+                    <a
+                      class="story-title fs-medium ff-timepos-semibold"
+                      href=""
+                    >
+                      OPEN CINEMA 2024 | MODERN TIMES
+                    </a>
+                  </h1>
+                  <p class="fc-primary fs-small ff-regular">
+                    Full programme & tickets
+                  </p>
+                  <a class="ff-semi-bold fc-btns fs-small uppercase"
+                    >Read Story</a
+                  >
+                </div>
+              </div>
+              <div class="story-container">
+                <img src="assets/story-img6.jpg" alt="" class="story-cover" />
+                <div class="story-body">
+                  <div class="list-info">
+                    <img src="assets/user.jpg" alt="" class="avatar" />
+                    <a class="ff-semi-bold fs-small"> Horrorvile</a>
+                  </div>
+                  <h1 class="story-title">
+                    <a
+                      class="story-title fs-medium ff-timepos-semibold"
+                      href=""
+                    >
+                      Cinemonster strikes again: Hooptober rides into Muerto
+                      County for its eleventh murderous year
+                    </a>
+                  </h1>
+                  <p class="fc-primary fs-small ff-regular">
+                    One of the greatest community challenges on Letterboxd has
+                    refuelled for an eleventh ride on the back of a pick-up deep
+                    into the black heart of Muerto Coutry. Yep, it’s Hooptober
+                    11: The Return To Texas Because We Need That Extra Push Over
+                    The Cliff.
+                  </p>
+                  <a class="ff-semi-bold fc-btns fs-small uppercase"
+                    >Read Story</a
+                  >
+                </div>
+              </div>
+              <div class="story-container">
+                <img src="assets/story-img1.jpg" alt="" class="story-cover" />
+                <div class="story-body">
+                  <div class="list-info">
+                    <img src="assets/user.jpg" alt="" class="avatar" />
+                    <a class="ff-semi-bold fs-small">Film Colossus</a>
+                  </div>
+                  <h1 class="story-title">
+                    <a
+                      class="story-title fs-medium ff-timepos-semibold"
+                      href=""
+                    >
+                      The Best Explanation of Blink Twice
+                    </a>
+                  </h1>
+                  <p class="fc-primary fs-small ff-regular">
+                    If you want to get better at watching movies, then you've
+                    come to the right place. Not only will you come away with a
+                    better understanding of Blink Twice's themes and meaning,
+                    but you'll learn some new techniques that will make watching
+                    movies much more active and exciting.
+                  </p>
+                  <a class="ff-semi-bold fc-btns fs-small uppercase"
+                    >Read Story</a
+                  >
+                </div>
+              </div>
+              <div class="story-container">
+                <img src="assets/story-img2.jpg" alt="" class="story-cover" />
+                <div class="story-body">
+                  <div class="list-info">
+                    <img src="assets/user.jpg" alt="" class="avatar" />
+                    <a class="ff-semi-bold fs-small">High On Films</a>
+                  </div>
+                  <h1 class="story-title">
+                    <a
+                      class="story-title fs-medium ff-timepos-semibold"
+                      href=""
+                    >
+                      All Spider-Man Movies Ranked from Worst to Best
+                    </a>
+                  </h1>
+                  <p class="fc-primary fs-small ff-regular">
+                    Although the title of this article is self-explanatory,
+                    here’s a clarification: this is a ranking of all the
+                    feature-length Spider-Man movies. A Wikipedia article on
+                    Spider-Man movies shows that there are films on the
+                    wall-crawler in addition to the ones mentioned in this list.
+                    But that’s not exactly true since they are either pilots to
+                    series or a composite of a couple of episodes that were
+                    released as a “film.” So, that doesn’t count. The ones that
+                    we are considering…
+                  </p>
+                  <a class="ff-semi-bold fc-btns fs-small uppercase"
+                    >Read Story</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="column pt-1">
+              <div class="story-container">
+                <img src="assets/story-img3.jpg" alt="" class="story-cover" />
+                <div class="story-body">
+                  <div class="list-info">
+                    <img src="assets/user.jpg" alt="" class="avatar" />
+                    <a class="ff-semi-bold fs-small">Regent Street Cinema </a>
+                  </div>
+                  <h1 class="story-title">
+                    <a
+                      class="story-title fs-medium ff-timepos-semibold"
+                      href=""
+                    >
+                      What’s on this week: 27 September
+                    </a>
+                  </h1>
+                  <p class="fc-primary fs-small ff-regular">
+                    We've got a bumper crop of movies showing this week, even by
+                    our standards!
+                  </p>
+                  <a class="ff-semi-bold fc-btns fs-small uppercase"
+                    >Read Story</a
+                  >
+                </div>
+              </div>
+              <div class="story-container">
+                <img src="assets/story-img4.jpg" alt="" class="story-cover" />
+                <div class="story-body">
+                  <div class="list-info">
+                    <img src="assets/user.jpg" alt="" class="avatar" />
+                    <a class="ff-semi-bold fs-small"
+                      >La Cinémathèque française</a
+                    >
+                  </div>
+                  <h1 class="story-title">
+                    <a
+                      class="story-title fs-medium ff-timepos-semibold"
+                      href=""
+                    >
+                      Wes Anderson, the Exhibition - Paris and London, 2025-26
+                    </a>
+                  </h1>
+                  <p class="fc-primary fs-small ff-regular">
+                    “I first visited the Cinématèque 25 years ago when it was
+                    still on the Trocadero, but I know it in my imagination
+                    (from the letters of François Truffaut) all the way back to
+                    when it was on the Ave. de Messine and rue d'Ulm -- and
+                    somehow I indirectly trace my own movie education to Henri
+                    Langlois and his acolytes -- so it an extra-special thrill
+                    for me to participate in this exhibition of whatever-it-is
+                    we are going to eventually…
+                  </p>
+                  <a class="ff-semi-bold fc-btns fs-small uppercase"
+                    >Read Story</a
+                  >
+                </div>
+              </div>
+              <div class="story-container">
+                <img src="assets/story-img5.jpg" alt="" class="story-cover" />
+                <div class="story-body">
+                  <div class="list-info">
+                    <img src="assets/user.jpg" alt="" class="avatar" />
+                    <a class="ff-semi-bold fs-small">De Cinema</a>
+                  </div>
+                  <h1 class="story-title">
+                    <a
+                      class="story-title fs-medium ff-timepos-semibold"
+                      href=""
+                    >
+                      OPEN CINEMA 2024 | MODERN TIMES
+                    </a>
+                  </h1>
+                  <p class="fc-primary fs-small ff-regular">
+                    Full programme & tickets
+                  </p>
+                  <a class="ff-semi-bold fc-btns fs-small uppercase"
+                    >Read Story</a
+                  >
+                </div>
+              </div>
+              <div class="story-container">
+                <img src="assets/story-img6.jpg" alt="" class="story-cover" />
+                <div class="story-body">
+                  <div class="list-info">
+                    <img src="assets/user.jpg" alt="" class="avatar" />
+                    <a class="ff-semi-bold fs-small">Horrorvile</a>
+                  </div>
+                  <h1 class="story-title">
+                    <a class="fs-medium ff-timepos-semibold" href="">
+                      Cinemonster strikes again: Hooptober rides into Muerto
+                      County for its eleventh murderous year
+                    </a>
+                  </h1>
+                  <p class="fc-primary fs-small ff-regular">
+                    One of the greatest community challenges on Letterboxd has
+                    refuelled for an eleventh ride on the back of a pick-up deep
+                    into the black heart of Muerto Coutry. Yep, it’s Hooptober
+                    11: The Return To Texas Because We Need That Extra Push Over
+                    The Cliff.
+                  </p>
+                  <a class="ff-semi-bold fc-btns fs-small uppercase"
+                    >Read Story</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sec-6 pt-6">
+          <div class="section-heading ff-light">
+            <a class="fs-smaller fw-bold fc-primary" href=""
+              >Recent Showdowns</a
+            >
+            <a class="more-btn" href="">more </a>
+          </div>
+
+          <div class="recent-showdowns-container pt-1">
+            <div class="showdowns">
+              <div class="image-border-effect">
+                <img src="assets/recent-showdowns3.jpg" alt="" class="" />
+              </div>
+              <div class="body">
+                <h3>
+                  <a class="ff-semi-bold" href="">Fighting with my Family</a>
+                </h3>
+                <p class="fc-primary ff-regular">Best films about siblings</p>
+              </div>
+            </div>
+            <div class="showdowns">
+              <div class="image-border-effect">
+                <img src="assets/recent-showdowns2.jpg" alt="" class="" />
+              </div>
+              <div class="body">
+                <h3>
+                  <a class="ff-semi-bold" href="">Band of Misfits</a>
+                </h3>
+                <p class="fc-primary ff-regular">Best underseen family films</p>
+              </div>
+            </div>
+            <div class="showdowns">
+              <div class="image-border-effect">
+                <img src="assets/recent-showdowns1.jpg" alt="" class="" />
+              </div>
+              <div class="body">
+                <h3>
+                  <a class="ff-semi-bold" href="">Dog Day Afternoon </a>
+                </h3>
+                <p class="fc-primary ff-regular">Sweatiest films</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sec-6 pt-6 pb-6">
+          <div class="section-heading ff-light">
+            <a class="fs-smaller fw-bold fc-primary" href="">Recent News</a>
+            <a class="more-btn" href="">more </a>
+          </div>
+
+          <div class="recent-showdowns-container pt-1">
+            <div class="showdowns">
+              <div class="image-border-effect">
+                <img src="assets/recent-news2.jpg" alt="" class="" />
+              </div>
+              <div class="body">
+                <h3>
+                  <a class="ff-semi-bold" href=""> Friends Furever </a>
+                </h3>
+                <p class="fc-primary ff-timepos-regular">
+                  The Wild Robot director Chris Sanders on the impact of
+                  hand-painted visuals.
+                </p>
+              </div>
+            </div>
+            <div class="showdowns">
+              <div class="image-border-effect">
+                <img src="assets/recent-showdowns3.jpg" alt="" class="" />
+              </div>
+              <div class="body">
+                <h3>
+                  <a class="ff-semi-bold" href="">Fighting with my Family</a>
+                </h3>
+                <p class="fc-primary ff-regular">Best films about siblings</p>
+              </div>
+            </div>
+            <div class="showdowns">
+              <div class="image-border-effect">
+                <img src="assets/recent-news.jpg" alt="" class="" />
+              </div>
+              <div class="body">
+                <h3>
+                  <a class="ff-semi-bold" href="">Never Look Away </a>
+                </h3>
+                <p class="fc-primary ff-regular">
+                  Lee director Ellen Kuras shares lessons in life, war and art.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper pt-2 pb-6">
+          <nav>
+            <ul class="ff-semi-bold capitalize">
+              <li><a href="">about</a></li>
+              <li><a href="">pro</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Apps</a></li>
+              <li><a href="">Podcast</a></li>
+              <li><a href="">Year in review</a></li>
+              <li><a href="">gifts</a></li>
+              <li><a href="">help</a></li>
+              <li><a href="">terms</a></li>
+              <li><a class="uppercase" href="">api</a></li>
+              <li><a href="">contact</a></li>
+            </ul>
+          </nav>
+          <div class="socials">
+            <a href="">
+              <i class="fa-brands fa-x-twitter"></i>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                Letterboxd on X
+              </div>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-threads"></i>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                Letterboxd on Threads
+              </div></a
+            >
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                Letterboxd on Facebook
+              </div>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                Letterboxd on instagram
+              </div>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-tiktok"></i>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                Letterboxd on TikTok
+              </div></a
+            >
+            <a href="">
+              <i class="fa-brands fa-youtube"></i>
+              <div class="movie-label ff-semi-bold fs-smaller hide-on-mobile">
+                Letterboxd on Youtube
+              </div>
+            </a>
+          </div>
+          <p class="copyright ff-regular fs-smaller">
+            © LetterBoxdClone made by
+            <span
+              ><a href="https://github.com/ZeyadMohamed5"
+                >Zeyad Mohamed</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
